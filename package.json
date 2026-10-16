@@ -1,0 +1,47 @@
+{
+  "name": "olho-que-tudo-ve",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monitoramento multi-conta social media com tema Olho Que Tudo Vê",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "db:push": "prisma db push"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@prisma/client": "^5.7.0",
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.2.54",
+    "@types/react-dom": "^18.2.18",
+    "bcryptjs": "^2.4.3",
+    "chart.js": "^4.4.1",
+    "clsx": "^2.1.2",
+    "dayjs": "^1.11.10",
+    "framer-motion": "^11.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "lucide-react": "^0.303.0",
+    "next": "^14.2.10",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jsonwebtoken": "^9.0.0",
+    "@tailwindcss/forms": "^0.5.7",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.56.0",
+    "eslint-config-next": "14.2.10",
+    "postcss": "^8.4.32",
+    "prisma": "^5.7.0",
+    "tailwindcss": "^3.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

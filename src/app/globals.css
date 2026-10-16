@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2deg 47.4% 11.2%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2deg 47.4% 11.2%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2deg 47.4% 11.2%;
+    --primary: 200deg 92.3% 56.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 265deg 82.1% 59.6%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210deg 25.3% 96.1%;
+    --muted-foreground: 210deg 10.8% 45.7%;
+    --accent: 210deg 25.3% 96.1%;
+    --accent-foreground: 222.2deg 47.4% 11.2%;
+    --destructive: 0 100% 50%;
+    --border: 210deg 25.3% 90.2%;
+    --input: 210deg 25.3% 90.2%;
+    --ring: 200deg 92.3% 56.5%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 224deg 71.4% 4.5%;
+    --foreground: 0 0% 93.3%;
+    --card: 224deg 71.4% 4.5%;
+    --card-foreground: 0 0% 93.3%;
+    --popover: 224deg 71.4% 4.5%;
+    --popover-foreground: 0 0% 93.3%;
+    --primary: 200deg 92.3% 56.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 265deg 82.1% 59.6%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 224deg 64.6% 10%;
+    --muted-foreground: 210deg 10.8% 65.9%;
+    --accent: 224deg 64.6% 10%;
+    --accent-foreground: 0 0% 93.3%;
+    --destructive: 0 100% 50%;
+    --border: 224deg 71.4% 15%;
+    --input: 224deg 71.4% 15%;
+    --ring: 200deg 92.3% 56.5%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, "Courier New", "Droid Sans", "Helvetica Neue", sans-serif;
+  }
+}
+
+@layer components {
+  .card-base {
+    @apply bg-card border border-border rounded-xl p-6 shadow-sm;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2 rounded-lg text-muted-foreground hover:bg-muted transition-colors;
+  }
+}
+
+@layer utilities {
+  .text-filagree {
+    @apply text-sm text-muted-foreground;
+  }
+
+  .metric-value {
+    @apply text-2xl font-bold text-foreground;
+  }
+
+  .metric-label {
+    @apply text-xs font-medium text-muted-foreground uppercase tracking-wider;
+  }
+}
